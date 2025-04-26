@@ -1,0 +1,102 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* separa logo de texto */
+  padding: 10px;
+  background-color: #f8f8f8;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+}
+
+.texto {
+  margin-left: 20px; /* dá um espacinho entre logo e texto */
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #222;
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #888;
+    font-style: italic;
+}
+
+main {
+    padding: 30px;
+}
+
+.lugar {
+    display: flex;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 30px;
+}
+
+.imagem-container {
+    flex-shrink: 0;
+    margin-right: 30px;
+    border: 3px solid #333;
+    overflow: hidden; /* Garante que a imagem não vaze da borda */
+    max-width: 400px; /* Define uma largura máxima para o container da imagem */
+}
+
+.lugar img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.texto-lugar {
+    flex-grow: 1;
+}
+
+.texto-lugar h2 {
+    margin-top: 0;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.texto-lugar p {
+    color: #ccc;
+}
+
+footer {
+    background-color: #222;
+    color: #888;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para telas menores (responsividade básica) */
+@media (max-width: 768px) {
+    .lugar {
+        flex-direction: column;
+    }
+
+    .imagem-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+}
